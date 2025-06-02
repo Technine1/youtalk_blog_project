@@ -1,0 +1,192 @@
+:root {
+    --c-primary: #8a3ffc;
+    --c-#fdf6f0: #fdf6f0FFF;
+    --c-muted: rgba(255, 255, 255, 0.7);
+    --font-base: "Montserrat", serif;
+    --gap-sm: 16px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns:
+            minmax(var(--page-border-min), 1fr)
+            minmax(var(--page-width-min), var(--page-width-max))
+            minmax(var(--page-border-min), 1fr);
+    grid-template-areas: ". ff .";
+    background-color: var(--c-primary);
+    color: var(--c-#fdf6f0);
+}
+
+.footer_wrapper {
+    grid-area: ff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+/* Общие секции с флексом */
+.footer_nav_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    max-width: 375px;
+    min-width: 288px;
+}
+
+.social_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 375px;
+    min-width: 288px;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.footer_participant_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    max-width: 375px;
+    min-width: 288px;
+
+}
+
+.footer_mail_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 375px;
+    min-width: 288px;
+}
+
+.footer_info_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+    min-width: 288px;
+    gap: 25px;
+}
+
+.send_mail_wrapper {
+    display: inline-flex;
+}
+
+/* Общие колонки навигации */
+footer .nav_left,
+footer .nav_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*gap: var(--gap-sm);*/
+}
+
+footer .nav_left {
+    width: 50%;
+}
+
+footer .nav_right {
+    width: 50%;
+}
+
+footer ul {
+    padding: 0;
+    align-items: center;
+}
+
+/* Общие шрифтовые свойства */
+footer li,
+footer .mail_title_txt,
+footer .confid,
+footer .copyright,
+footer .juristic_documents,
+footer .payment_methods {
+    font-family: var(--font-base);
+    font-style: normal;
+    color: var(--c-#fdf6f0);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 8px 0;
+}
+
+footer .mail_title_txt {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+footer .confid,
+footer .copyright,
+footer .juristic_documents,
+footer .payment_methods {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: var(--c-muted);
+}
+
+footer a {
+    color: var(--c-#fdf6f0);
+    text-decoration: none;
+}
+
+footer .mail-form {
+    box-sizing: border-box;
+    width: 90%;
+
+    height: 48px;
+    background: var(--c-#fdf6f0);
+    border-radius: 4px;
+    border: none;
+    color: #9D9D9D;
+    text-align: left;
+    margin-top: 10px;
+}
+
+footer .send_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 64px;
+    height: 48px;
+    background: #16C8BB;
+    border-radius: 4px;
+    border: none;
+}
+
+footer .footer_line {
+    background: #9D9D9D;
+    opacity: 0.3;
+    height: 1px;
+}
+
+footer .participant_logo {
+    width: 221px;
+    height: 50px;
+}
+
+

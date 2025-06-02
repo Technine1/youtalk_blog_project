@@ -1,0 +1,452 @@
+/*** Main ***/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1fr;
+}
+
+.block_wrapper {
+    grid-area: c;
+    display: grid;
+    width: 57.5%;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+aside {
+    grid-area: a;
+    width: 20%;
+}
+
+.article-bottom {
+    grid-area: b;
+}
+
+/*main*/
+
+main .block_title_txt {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+main .block_autor-date_wrapper {
+    display: flex;
+    margin: 16px 0 24px 0;
+    gap: 8px;
+}
+
+main .block_autor-date {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+main .block_hashtag {
+    display: none;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+main .block_hashtag_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a3ffc;
+    text-decoration-line: none;
+}
+
+main .main_article_img_wrapper img {
+    width: 100%;
+}
+main .ontogenesis_img_wrapper img {
+    width: 100%;
+}
+
+
+main .content_wrapper {
+    display: block;
+    margin-top: 24px;
+}
+
+main .content_color_list_circle {
+    width: 24px;
+    height: 24px;
+    margin: 0 0 0 8px;
+}
+
+main .content_ul_wrapper {
+    margin-left: -24px;
+}
+
+main p {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+main nav li {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+main ul {
+    padding-inline-start: 24px;
+    list-style-type: none;
+}
+
+main ul a {
+    color: #2c2c2c;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration-line: underline;
+}
+
+main .topic_title {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 24px 0 16px 0;
+}
+
+main .quote_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #F3F7FE;
+    padding: 30px 24px 24px 24px;
+    margin-top: 40px;
+    gap: 8px;
+    border-radius: 16px;
+    background-image: url(../images/quotes.png);
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: 18px;
+}
+
+main .quote_txt {
+    font-family: "Montserrat", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+main .color_list_wrapper {
+    display: flex;
+}
+
+main .color_list_circle {
+    width: 24px;
+    height: 24px;
+    margin: 0 16px 0 8px;
+}
+
+main .under_img_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 16px 0 24px 0;
+}
+
+main .quote_mini_wrapper {
+    display: flex;
+    align-items: center;
+    margin: 24px 0 24px 0;
+    width: 100%;
+    background-image: url(../images/quote_mini.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+main .quote_mini_txt {
+    font-family: "Montserrat", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+main .img_and_text_wrapper {
+    display: flex;
+    margin: 24px 0 24px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+main .img_and_text_img {
+    padding-right: 16px;
+    width: 100%;
+}
+
+main .img_and_text_img img {
+    width: 100%;
+}
+
+main .exercise_yellow_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    margin-top: 24px;
+    gap: 8px;
+    background-color: #FEFAEC;
+    border-radius: 16px;
+}
+
+main .exercise_orange_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    margin-top: 24px;
+    gap: 8px;
+    background-color: #fdf6f03EB;
+    border-radius: 16px;
+}
+
+main .img_and_text_half_page_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 24px 0 24px 0;
+    gap: 24px;
+}
+
+main .half_page_right {
+    display: grid;
+}
+
+main .half_page_left {
+    display: grid;
+}
+
+main .img_and_text_img_half {
+    padding-bottom: 24px;
+}
+
+main .img_and_text_img_half img{
+    width: 100%;
+}
+
+main .lightning_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+main .exercise_blue_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    margin-top: 24px;
+    gap: 8px;
+    background-color: rgba(3, 178, 165, 0.1);
+    border-radius: 16px;
+}
+
+main .lower_aside {
+    display: none;
+}
+
+main .hashtag_wrapper {
+    display: flex;
+    margin-top: 24px;
+    gap: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .hashtag_wrapper_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a3ffc;
+    text-decoration: none
+}
+
+/*//////////////*/
+
+.article-bottom {
+    display: grid;
+    grid-template-columns: 687px 513px;
+    grid-template-rows: auto auto;
+}
+
+.bottom_line {
+    grid-column: 1 / 3;
+    height: 0;
+    margin: 48px 0 72px 0;
+    border: 1px solid #DEDEDE;
+}
+
+.responds_problem_wrapper {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+}
+
+.responds_problem_title_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    width: 348px;
+}
+
+.responds_problem_subtitle_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    width: 327px;
+}
+
+.button_selection-psychologist {
+    width: 230px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f4f8;
+    justify-content: center;
+    border-color: transparent;
+    padding-top: 8px;
+}
+
+.button_selection-psychologist_a {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ff7eb6;
+    text-decoration: none;
+}
+
+.mask_group_wrapper {
+    display: flex;
+    grid-column: 2;
+}
+
+@media (max-width: 1439px) {
+    main .article-bottom {
+        display: none;
+    }
+
+    .mask_group_wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    :root {
+        --page-width-max: 960px;
+        --page-width-min: 728px;
+        --page-border-max: 32px;
+        --page-border-min: 32px;
+    }
+
+    .container {
+        grid-template-columns: minmax(20px, 1fr) minmax(200px, var(--page-width-max)) minmax(20px, 1fr);
+    }
+
+    /*** Main 768 ***/
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main .block_wrapper {
+        width: 100%;
+    }
+
+    main aside {
+        width: 100%;
+    }
+
+    aside .aside_wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .free_windows_wrapper,
+    .psychologist_information_wrapper,
+    .give_care_wrapper,
+    .video_sessions_wrapper {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    :root {
+        --page-width-max: 728px;
+        --page-width-min: 374px;
+        --page-border-max: 32px;
+        --page-border-min: 20px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    :root {
+        --page-width-max: 374px;
+        --page-width-min: 288px;
+        --page-border-max: 20px;
+        --page-border-min: 20px;
+    }
+    .free_windows_wrapper, .psychologist_information_wrapper, .give_care_wrapper, .video_sessions_wrapper {
+     width: 100%;
+}
+
+@media (max-width: 320px) {
+
+    :root {
+        --page-width-max: 288px;
+        --page-width-min: 288px;
+        --page-border-max: 16px;
+        --page-border-min: 16px;
+    }
+
+
+}
+
+}

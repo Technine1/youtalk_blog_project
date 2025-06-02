@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+
+    :root {
+        --page-width-max: 728px;
+        --page-width-min: 374px;
+        --page-border-max: 32px;
+        --page-border-min: 20px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    :root {
+        --page-width-max: 374px;
+        --page-width-min: 288px;
+        --page-border-max: 20px;
+        --page-border-min: 20px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    :root {
+        --page-width-max: 288px;
+        --page-width-min: 288px;
+        --page-border-max: 16px;
+        --page-border-min: 16px;
+    }
+}

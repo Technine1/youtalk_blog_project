@@ -1,0 +1,5 @@
+<!-- arrow-down.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 6" width="12" height="6">
+  <path stroke="#333333" stroke-linecap="round" stroke-linejoin="round"
+        d="M 1.09998 0.899902 L 5.99998 5.0999 L 10.9 0.899902"/>
+</svg>

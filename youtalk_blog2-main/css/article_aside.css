@@ -1,0 +1,333 @@
+/*** Sidebar ***/
+
+aside {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    align-content: start;
+}
+
+aside .free_windows_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background: #E6F0FD;
+    border-radius: 16px;
+    height: 524px;
+    padding: 10px;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+}
+
+aside button {
+    width: 100%;
+}
+
+aside .free_windows_img {
+    width: 100%;
+    padding-top: 24px;
+}
+
+aside .free_windows_title_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+aside .free_windows_subtitle_txt {
+    width: 100%;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+aside .button_free_windows_more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    background: #ff7eb6;
+    border-radius: 4px;
+    border-color: transparent;
+    width: 100%;
+    height: 48px;
+}
+
+aside .button_free_windows_more_a {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fdf6f0;
+    text-decoration: none;
+}
+
+aside .psychologist_information_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #fdf6f0;
+    border: 1px solid #DEDEDE;
+    border-radius: 16px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 30px 50px #f0f4f8);
+    margin-top: 24px;
+    background-image: url(../images/psychologist_lilia.png);
+    background-repeat: no-repeat;
+    background-position-x: 81px;
+    background-position-y: 24px;
+}
+
+aside .correspondence_and_video_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    left: 22px;
+    top: 16px;
+    position: relative;
+}
+
+aside .correspondence_and_video_inside_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6px;
+    gap: 4px;
+    background: rgba(243, 244, 248, 0.7);
+    border-radius: 6px;
+}
+
+aside .psychologist_information_txt_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 91px;
+}
+
+aside .psychologist_name {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+aside .psychologist_position {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+aside .experience_and_age_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+}
+
+aside .experience_and_age_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A2A7B1;
+    padding-bottom: 20px;
+}
+
+aside .psychologist_information_line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 250px;
+    height: 1px;
+    background: #fdf6f0FFF;
+    box-shadow: 0 1px 0 #DEDEDE;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+aside .psychologist_work_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+
+}
+
+aside .psychologist_work_title_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+aside .psychologist_work_txt {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+aside .psychologist_work_circle {
+    padding: 0 10px 0 6px;
+}
+
+aside .button_psychologist_information_more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    background: #ff7eb6;
+    border-radius: 4px;
+    border-color: transparent;
+    width: 100%;
+    height: 48px;
+    margin: 20px 0 36px 0;
+}
+
+aside .button_psychologist_information_more_a {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fdf6f0;
+    text-decoration: none;
+}
+
+aside .give_care_wrapper {
+    display: flex;
+    height: auto;
+    margin: 28px 0 42px 0;
+}
+
+aside .video_sessions_wrapper {
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: #fdf6f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #DEDEDE;
+    filter: drop-shadow(0px 30px 50px #f0f4f8);
+}
+
+aside .video_sessions_title_wrapper {
+    padding: 32px 0 16px 32px;
+}
+
+aside .video_sessions_title_max {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #8a3ffc;
+}
+
+aside .video_sessions_title_min {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #8a3ffc;
+}
+
+aside .video_sessions_txt {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #011632;
+    padding: 0 0 16px 32px;
+    width: 160px;
+}
+
+aside .video_sessions_price {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0 0 0 32px;
+}
+
+aside .button_video_sessions_buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    background: #ff7eb6;
+    border-radius: 4px;
+    border-color: transparent;
+    width: 108px;
+    height: 48px;
+    margin: 20px 0 32px 32px;
+}
+
+aside .button_video_sessions_buy_a {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fdf6f0;
+    text-decoration: none;
+}
+
+aside .gift_wrapper {
+    position: absolute;
+    right: 112px;
+    bottom: 94px;
+}
+
+aside .red_gift_wrapper {
+    position: fixed;
+    width: 115px;
+    right: 0;
+}
+
+aside .blue_gift_wrapper {
+    position: fixed;
+    width: 115px;
+    height: 106px;
+}
+
+aside .red_spot_middle_wrapper {
+    position: relative;
+    top: 584px;
+    right: -80.14%;
+}
+

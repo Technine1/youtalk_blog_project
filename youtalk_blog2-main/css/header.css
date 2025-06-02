@@ -1,0 +1,202 @@
+header {
+    display: grid;
+    grid-template-columns:
+            70px
+            minmax(calc(var(--page-width-min) - 320px), 1fr)
+            250px;
+
+
+    grid-template-areas: "l n b";
+    grid-template-rows: 1fr;
+    background: #fdf6f0FFF;
+    height: 76px;
+    align-items: center;
+    border-bottom: 1px solid #f0f4f8;
+}
+
+header .nav_logo_wrapper {
+    grid-area: l;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    grid-area: n;
+    padding-left: 10px;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0;
+    gap: clamp(16px, 2vw, 30px);
+}
+
+header nav li {
+    list-style-type: none;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+header .nav_button_selection-psychologist {
+    grid-area: b;
+    width: 230px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f4f8;
+    justify-content: center;
+    justify-self: end;
+    border-color: transparent;
+}
+
+header .nav_button_selection-psychologist_a {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ff7eb6;
+    text-decoration: none;
+}
+
+header nav a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header .hamburger-menu {
+    grid-area: b;
+    display: none;
+}
+
+header #menu_toggle {
+    opacity: 0;
+}
+
+header .menu_btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+header .menu_btn > span,
+header .menu_btn > span::before,
+header .menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #ff7eb6;
+}
+
+header .menu_btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+header .menu_btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+header .menu_box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 50px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fdf6f0;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+    z-index: 2;
+}
+
+header .menu_item {
+    display: block;
+    list-style-type: none;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 16px;
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+header .menu_item:hover {
+    background-color: #f0f4f8;
+}
+
+header #menu_toggle:checked ~ .menu_btn > span {
+    transform: rotate(45deg);
+}
+
+header #menu_toggle:checked ~ .menu_btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+header #menu_toggle:checked ~ .menu_btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+header #menu_toggle:checked ~ .menu_box {
+    visibility: visible;
+}
+
+@media (max-width: 1023px) {
+
+    /*** Header 768 ***/
+    header {
+        grid-template-columns:
+                70px
+                minmax(calc(var(--page-width-min) - 320px), 1fr)
+                250px;
+
+        /*grid-template-columns: minmax(20px, 1fr) minmax(200px, var(--page-width-max)) minmax(20px, 1fr);        */
+
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav ul {
+        gap: 16px;
+    }
+
+    header .nav_button_selection-psychologist {
+        display: none;
+    }
+
+    header .hamburger-menu {
+        display: flex;
+        justify-content: end;
+    }
+
+    header #menu_toggle:checked ~ .menu_box {
+        visibility: visible;
+        left: 570px;
+    }
+}

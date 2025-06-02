@@ -1,0 +1,12 @@
+.nav_mini_wrapper {
+    display: flex;
+    gap: 8px;
+    padding: 16px 0 54px 6px;
+}
+
+.nav_mini_txt {
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    color: #2c2c2c;
+    text-decoration: none;
+}
